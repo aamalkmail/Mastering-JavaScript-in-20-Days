@@ -13,4 +13,4 @@ This is a challenge to learn and master Javascript in 20 days or less 🌝 . My 
 ## Coding Challenges 🔥: 
 - []()
 ### Daily page links 🌅 : 
-- [Day 1]() 
+- [Day 1](https://github.com/aamalkmail/Mastering-JavaScript-in-20-Days/blob/main/Day1) 
