@@ -1,4 +1,4 @@
-# Day 2: Arrays & Objects
+# Day 3: Arrays & Objects
 
 This README file summarizes the JavaScript lesson on Arrays and Objects. Arrays let us keep multiple values together in a single collection &An object is a collection of properties, and a property is an association between a name (or key) and a value.
 
