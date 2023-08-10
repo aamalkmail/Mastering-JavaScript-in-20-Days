@@ -205,3 +205,120 @@ const yello = hello.toUpperCase();
 }
 
 ```
+
+## Coding Problems: 
+### [Copy Array Items Using slice()](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-data-structures/copy-array-items-using-slice)
+
+#### My Solution
+```javascript
+function forecast(arr) {
+  // Only change code below this line
+  let arr1 = arr.slice(2,4)
+  return arr1;
+}
+
+// Only change code above this line
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+```
+
+### [Combine Arrays with the Spread Operator](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-data-structures/combine-arrays-with-the-spread-operator)
+
+#### My Solution
+```javascript
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence = ['learning',...fragment,'is','fun']; // Change this line
+  return sentence;
+}
+
+console.log(spreadOut());
+```
+
+### [Profile Lookup](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/profile-lookup)
+
+#### My Solution
+```javascript
+// Setup
+const contacts = [
+  {
+    firstName: "Akira",
+    lastName: "Laine",
+    number: "0543236543",
+    likes: ["Pizza", "Coding", "Brownie Points"],
+  },
+  {
+    firstName: "Harry",
+    lastName: "Potter",
+    number: "0994372684",
+    likes: ["Hogwarts", "Magic", "Hagrid"],
+  },
+  {
+    firstName: "Sherlock",
+    lastName: "Holmes",
+    number: "0487345643",
+    likes: ["Intriguing Cases", "Violin"],
+  },
+  {
+    firstName: "Kristian",
+    lastName: "Vos",
+    number: "unknown",
+    likes: ["JavaScript", "Gaming", "Foxes"],
+  },
+];
+
+function lookUpProfile(name, prop) {
+  for (let i = 0; i < contacts.length; i++) {
+    if (contacts[i].firstName === name) {
+      if (contacts[i][prop] !== undefined) {
+        return contacts[i][prop];
+      } else {
+        return "No such property";
+      }
+    }
+  }
+  return "No such contact";
+}
+lookUpProfile("Akira", "likes");
+```
+### [Write Reusable JavaScript with Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/write-reusable-javascript-with-functions)
+
+#### My Solution
+```javascript
+function reusableFunction() {
+  console.log("Hi World");
+}
+reusableFunction();
+```
+
+### [Understanding Undefined Value returned from a Function](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/understanding-undefined-value-returned-from-a-function)
+
+#### My Solution
+```javascript
+// Setup
+let sum = 0;
+
+function addThree() {
+  sum = sum + 3;
+}
+
+// Only change code below this line
+function addFive(){
+  sum = sum + 5;
+}
+
+// Only change code above this line
+
+addThree();
+addFive();
+```
+
+### [Return a Value from a Function with Return](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/return-a-value-from-a-function-with-return)
+
+#### My Solution
+```javascript
+function timesFive(num){
+  return num*5;
+}
+
+timesFive(5);
+```
