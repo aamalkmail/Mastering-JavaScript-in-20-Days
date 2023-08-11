@@ -45,11 +45,11 @@ let mixedArray = ["pop", 6, "squish", false, document];
 
 ["lions", "tigers", "bears oh my!"].join(" & ")//join values in the array using a string joiner that we pass in
 
-[1, 2, 3].concat([4, 5, 6])//join two deferent arrays to give us one array with all the elements of poth arrays
+[1, 2, 3].concat([4, 5, 6])//join two deferent arrays to give us one array with all the elements of both arrays
 }
 
 ```
-### mutable vs. immutable
+### Mutable vs. immutable
 
 **"Mutable"** data can be edited (e.g. Arrays)      
 
