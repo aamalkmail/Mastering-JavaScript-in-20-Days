@@ -38,6 +38,40 @@ if (5 > 4) {
 } //That code will print greater than.
 
 //We can chain else and if blocks to account for multiple conditions
+function compare(x, y) {
+    if (x > y) {
+        console.log(x, "is greater than", y);
+    } else if (x < y) {
+        console.log(x, "is less than", y);
+    } else {
+        console.log(x, "is equal to", y);
+    }
+}
 
+//The (condition) is usually an expression that evaluates to a boolean
+if (forecast === "rain") {
+    console.log("bring an umbrella");
+}
 
+//If it's given some other value, JS will convert it to a boolean, and decide based on its "truthiness"
+if ("nonempty strings are truthy") {
+    console.log("this line will run");
+}
+
+if (0) {
+    console.log("zero is truthy");
+} else {
+    console.log("zero is falsy");
+}//It will print: zero is falsy
+
+//The ! operator negates a boolean (gives its opposite)
+let someoneIsAroundYou = false; 
+if (!someoneIsAroundYou) {
+    console.log("baby I love you");
+}
+
+//Sometimes we care about the truthiness of more than one value
+if (you.happy && you.knowIt) {
+    you.clapHands();
+}
 ```
