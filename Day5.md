@@ -75,3 +75,39 @@ if (you.happy && you.knowIt) {
     you.clapHands();
 }
 ```
+Logical "and" (&&) requires both values to be truthy
+
+| A       | B        | A&&B  |
+| :-----: | :------: | :----:|
+| true    |  true    | true  |
+| true    |  false   | false |
+| false   |  true    | false |
+| false   |  false   | false |
+
+Logical "or" (||) requires only one value to be truthy
+
+| A       | B        | A||B  |
+| :-----: | :------: | :----:|
+| true    |  true    | true  |
+| true    |  false   | true  |
+| false   |  true    | true  |
+| false   |  false   | false |
+
+#### Conditional ternary operator
+
+a "shortcut" operator for writing quick conditionals
+```javascript
+//it needs 3 values to work:
+condition ? valueIfTrue : valueIfFalse;
+
+let mood = forecast === "sunny" ? "happy" : "sad";
+//is equivalent to
+let mood;
+if (forecast === "sunny") {
+    mood = "happy";
+} else {
+    mood = "sad";
+}
+```
+
+
