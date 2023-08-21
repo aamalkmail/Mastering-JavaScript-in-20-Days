@@ -206,7 +206,122 @@ to run much later
 **Benefits**
 - Super explicit once you understand how it works under-the-hood
 
+## Coding Problems: 
 
+### Question 1:
+Write a closure named createCounter that takes an initial value start and returns a function. The returned function, when invoked,  
+should increment the counter by 1 and return the updated value.
+
+#### My Solution
+
+```javascript
+function createCounter(start) {
+  let counter = start;
+
+  // The returned function increments the counter and returns the updated value
+  return function() {
+    return counter++;
+  };
+}
+
+// Create a counter starting from 5
+const counter = createCounter(5);
+
+// Each time the counter function is invoked, it will increment the counter by 1
+console.log(counter()); // Output: 5
+console.log(counter()); // Output: 6
+console.log(counter()); // Output: 7
+```
+
+### Question 2:
+Write a closure named calculateAverage that takes an array of numbers, nums, and returns a function. The returned function, when invoked, should calculate and return the average of the numbers in the array.
+
+#### My Solution
+```javascript
+function calculateAverage(nums) {
+  // Calculate the sum of the numbers in the array
+  const sum = nums.reduce((acc, num) => acc + num, 0);
+
+  // The returned function calculates and returns the average
+  return function() {
+    return sum / nums.length;
+  };
+}
+
+// Example array of numbers
+const numbers = [10, 20, 30, 40, 50];
+
+// Create an average calculator for the array of numbers
+const averageCalculator = calculateAverage(numbers);
+
+// Invoke the returned function to calculate and get the average
+console.log(averageCalculator()); // Output: 30
+
+```
+
+### Question 3:
+Write a closure named powerOf that takes a base number base and returns a function. The returned function, when invoked with an exponent exp, should calculate and return the result of base raised to the power of exp.
+
+#### My Solution
+```javascript
+function powerOf(base) {
+  // The returned function calculates and returns the result of base raised to the power of exp
+  return function(exp) {
+    return Math.pow(base, exp);
+  };
+}
+
+// Create a power calculator for base 2
+const powerOfTwo = powerOf(2);
+
+// Calculate 2^3 using the power calculator
+console.log(powerOfTwo(3)); // Output: 8
+
+// Calculate 2^5 using the power calculator
+console.log(powerOfTwo(5)); // Output: 32
+
+```
+
+### Question 4:
+Write a closure named compose that takes multiple functions as arguments and returns a new function. The returned function should apply the provided functions in reverse order, passing the result of each function as an argument to the next function.
+
+#### My Solution
+```javascript
+function compose(...functions) {
+  // The returned function applies the provided functions in reverse order
+  return function(arg) {
+    // Start with the initial argument
+    let result = arg;
+
+    // Apply functions in reverse order
+    for (let i = functions.length - 1; i >= 0; i--) {
+      result = functions[i](result);
+    }
+
+    return result;
+  };
+}
+
+// Example functions
+function addTwo(x) {
+  return x + 2;
+}
+
+function multiplyByThree(x) {
+  return x * 3;
+}
+
+function subtractTen(x) {
+  return x - 10;
+}
+
+// Create a composed function
+const composedFunction = compose(subtractTen, multiplyByThree, addTwo);
+
+// Use the composed function
+console.log(composedFunction(5)); // Output: ((5 + 2) * 3) - 10 = 11
+
+```
 
 
 
