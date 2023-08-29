@@ -1,4 +1,4 @@
-# Day 2: Scope , Scope & Function Expression 
+# Day 13: Scope , Scope & Function Expression 
 
 This README file summarizes the JavaScript lesson on Scope , Scope & Function Expression.
 
