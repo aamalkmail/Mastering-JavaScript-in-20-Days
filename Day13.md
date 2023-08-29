@@ -17,7 +17,7 @@ In this lesson, we explored Scope , Scope & Function Expression in JavaScript. H
 Function Scope:
 When a function is defined, it creates its own scope. Variables declared inside that function are accessible only within that function, creating a nested scope. If a function is defined within another function, the inner function has access to its own variables and the variables of its parent function.
 
-<img src="![image](https://github.com/mahaalqerem/Mastering-JavaScript-in-20-Days/assets/138065974/7901563e-8b8f-4215-a82d-3267d8c0c9b3)
+<img src="![image](https://github.com/mahaalqerem/Mastering-JavaScript-in-20-Days/assets/138065974/7901563e-8b8f-4215-a82d-3267d8c0c9b3)"/>
 
 2-
 Block Scope (ES6+):
